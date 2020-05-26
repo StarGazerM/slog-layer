@@ -33,7 +33,7 @@
   '((slog-mode :location local)
     evil-cleverparens
     smartparens
-    paredit-mode)
+    paredit)
   "The list of Lisp packages required by the slog layer.
 
 Each entry is either:
@@ -67,7 +67,7 @@ Each entry is either:
 
 ;(defun slog/post-init-slog-mode ()
 ;  (add-hook 'slog-mode-hook #'enable-paredit-mode))
-(defun slog/init-paredit-mode ()
+(defun slog/init-paredit ()
   (add-hook 'slog-mode-hook #'enable-paredit-mode))
 
 (defun slog/post-init-smartparens ()
