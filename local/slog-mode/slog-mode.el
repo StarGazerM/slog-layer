@@ -55,8 +55,8 @@
     st))
 
 (setq slog-highlights
-      '((":-\\|=\\|:\\|\\.type\\|\\-->\\|\\?" . font-lock-keyword-face)
-        ("\\number\\|symbol" . font-lock-builtin-face)
+      '(("?\\|<--\\|-->\\|~\\|\\." . font-lock-keyword-face)
+        ("\\number\\|or\\|not\\|=/=\\|=" . font-lock-builtin-face)
         (":" . font-lock-constant-face)))
 
 (define-derived-mode slog-mode fundamental-mode "slog"
